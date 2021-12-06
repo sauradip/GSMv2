@@ -1,4 +1,4 @@
-# Proposal-Free Temporal Action Localization with Global Segmentation Mask
+# Temporal Action Localization with Global Segmentation Mask v2
 
 This repository is the official pytorch implementation of "Proposal-Free Temporal Action Localization with Global Segmentation Mask". 
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 To train the model in the paper, run this command:
 
 ```train
-python gsm_train.py 
+python gsm_train_v2.py 
 ```
 > You can set all the training hyperparameters in `config/anet.yaml` file
 * The Training Curves will be as follows
@@ -35,7 +35,7 @@ python gsm_train.py
 To evaluate our model on ActivityNetv1.3 dataset, run:
 
 ```inference
-sh evaluation.sh
+sh gsm_multi_infer.sh
 
 Loading validation Video Information ...
 100% 4728/4728 [00:00<00:00, 9221.40it/s] 
