@@ -28,7 +28,7 @@ class GSM(nn.Module):
             padding=0)
         )
 
-        self.scale_down = nn.Conv1d(in_channels=1300, out_channels=100, kernel_size=1,
+        self.scale_down = nn.Conv1d(in_channels=(self.temp_scale[0]+self.temp_scale[1]+self.temp_scale[2]), out_channels=100, kernel_size=1,
             padding=0)
 
         # self.classifier_2 = nn.Sequential(
